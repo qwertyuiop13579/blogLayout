@@ -1,7 +1,7 @@
 {
-  "name": "gulp-bundle",
+  "name": "blog-layout",
   "version": "1.0.0",
-  "description": "my gulp bundle",
+  "description": "My blog layout",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
