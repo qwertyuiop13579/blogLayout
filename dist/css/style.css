@@ -118,6 +118,11 @@ select {
   color: #21243d;
 }
 
+.title-posts {
+  font-size: 22px;
+  color: #21243d;
+}
+
 .text {
   font-family: "Heebo";
   font-style: normal;
@@ -231,6 +236,80 @@ select {
   max-width: 100%;
 }
 
+.posts {
+  background: #edf7fa;
+  padding: 25px 0px 13px 0;
+}
+
+.posts__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.posts__title {
+  padding: 0px 20px 0px 0px;
+}
+
+.posts__view-all {
+  flex: 0 0 auto;
+  font-size: 16px;
+  line-height: 23px;
+  color: #00a8cc;
+}
+
+.posts__items {
+  margin: 0px -10px;
+}
+
+.posts__column {
+  flex: 0 1 50%;
+  padding: 0px 10px;
+  margin-bottom: 17px;
+}
+
+.recent-post {
+  height: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+  padding: 20px 20px 20px 20px;
+}
+
+.recent-post *:last-child {
+  margin-bottom: 0px;
+}
+
+.recent-post__title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 146.1538461538%;
+  color: #000;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.recent-post__title:hover {
+  color: #ff6464;
+}
+
+.recent-post__info {
+  font-size: 18px;
+  line-height: 144.4444444444%;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.recent-post__info span {
+  margin: 0px 10px;
+}
+
+.recent-post__text {
+  font-size: 16px;
+  line-height: 143.75%;
+  color: #000;
+}
+
 body {
   font-family: "Heebo";
   color: #000;
@@ -259,6 +338,10 @@ body._lock {
   .menu__list li {
     margin: 0px 33px 0px 0px;
   }
+
+  .posts__items {
+    display: flex;
+  }
 }
 
 @media (max-width: 992px) {
@@ -285,6 +368,10 @@ body._lock {
 @media (max-width: 768px) {
   .title {
     font-size: 32px;
+  }
+
+  .title-posts {
+    font-size: 18px;
   }
 
   .header__menu {
@@ -388,6 +475,26 @@ body._lock {
     height: 170px;
     flex: 0 0 170px;
     margin: 0px 0px 30px 0px;
+  }
+
+  .posts__header {
+    justify-content: center;
+  }
+
+  .posts__view-all {
+    display: none;
+  }
+
+  .recent-post {
+    padding: 10px 10px 20px 20px;
+  }
+
+  .recent-post__title {
+    font-size: 22px;
+  }
+
+  .recent-post__info {
+    font-size: 16px;
   }
 
   .page {

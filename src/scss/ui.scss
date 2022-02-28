@@ -3,11 +3,19 @@
   font-family: $fontFamily;
   font-style: normal;
   font-weight: 700;
-  line-height: 60 / 44 * 100%;
+  line-height: calc(60 / 44) * 100%;
   color: $dark;
 
   @media (max-width: $md3) {
     font-size: 32px;
+  }
+}
+
+.title-posts {
+  font-size: 22px;
+  color: $dark;
+  @media (max-width: $md3) {
+    font-size: 18px;
   }
 }
 
@@ -16,7 +24,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 23 / 16 * 100%;
+  line-height: calc(23 / 16) * 100%;
   color: $dark;
 }
 
@@ -33,7 +41,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 29/20 * 100%;
+  line-height: calc(29 / 20) * 100%;
   color: white;
 
   transition: background-color 0.3s ease;
