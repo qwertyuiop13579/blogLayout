@@ -109,6 +109,50 @@ select {
   font-style: normal;
 }
 
+.title {
+  font-size: 44px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 136.3636363636%;
+  color: #21243d;
+}
+
+.text {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 143.75%;
+  color: #21243d;
+}
+
+.btn {
+  background-color: #ff6464;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 20px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 145%;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c90505;
+}
+
+.header {
+  position: relative;
+  z-index: 100;
+}
+
 .header__content {
   max-width: 1052px;
   padding: 0px 10px;
@@ -147,6 +191,46 @@ select {
   color: #ff6464;
 }
 
+.hello {
+  padding: 38px 0px 70px 0px;
+}
+
+.hello__container {
+  display: flex;
+}
+
+.hello__content {
+  align-items: flex-start;
+  padding: 18px 110px 0px 0px;
+  flex: 1 1 auto;
+}
+
+.hello__content *:last-child {
+  margin-bottom: 0;
+}
+
+.hello__title {
+  margin: 0 0 25px 0;
+}
+
+.hello__text {
+  margin: 0 0 30px 0;
+}
+
+.hello__btn {
+  height: 47px;
+}
+
+.hello__avatar {
+  flex: 0 0 243px;
+  height: 243px;
+  overflow: hidden;
+}
+
+.hello__avatar img {
+  max-width: 100%;
+}
+
 body {
   font-family: "Heebo";
   color: #000;
@@ -160,6 +244,11 @@ body {
 
 body._lock {
   overflow: hidden;
+}
+
+.page {
+  padding: 90px 0px 0px 0px;
+  flex: 1 1 auto;
 }
 
 @media (min-width: 768px) {
@@ -180,12 +269,24 @@ body._lock {
 }
 
 @media (max-width: 868px) {
+  .hello {
+    padding: 0px 0px 70px 0px;
+  }
+
+  .hello__content {
+    padding: 18px 50px 0px 0px;
+  }
+
   ._container {
     max-width: 750px;
   }
 }
 
 @media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
   .header__menu {
     height: 50px;
   }
@@ -242,7 +343,7 @@ body._lock {
     left: 0;
     overflow: auto;
     padding: 70px 10px 30px 10px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.95);
   }
 
   .menu__body._active {
@@ -253,5 +354,43 @@ body._lock {
     font-size: 40px;
     display: block;
     text-align: center;
+  }
+
+  .hello {
+    padding: 0px 0px 60px 0px;
+  }
+
+  .hello__container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hello__content {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .hello__title {
+    margin: 0 0 20px 0;
+  }
+
+  .hello__text {
+    padding: 0 15px;
+    margin: 0 0 25px 0;
+  }
+
+  .hello__btn {
+    margin: 0 0 20px 0;
+  }
+
+  .hello__avatar {
+    width: 170px;
+    height: 170px;
+    flex: 0 0 170px;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .page {
+    padding: 35px 0px 0px 0px;
   }
 }
