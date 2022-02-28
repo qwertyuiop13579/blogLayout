@@ -1,9 +1,26 @@
-@import 'fonts';
+@import "null.scss";
+@import "variables";
+@import "fonts";
+@import "header";
 
 body {
-  font-family: Roboto;
-  background-color: black;
-  span {
-    color: green;
+  font-family: $fontFamily;
+  color: $black;
+  font-size: 14px;
+}
+
+._container {
+  max-width: $maxWidthContainer;
+  margin: 0 auto;
+  @media (max-width: $md1) {
+    max-width: 750px;
   }
+  @media (max-width: $md2) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+body._lock {
+  overflow: hidden;
 }
