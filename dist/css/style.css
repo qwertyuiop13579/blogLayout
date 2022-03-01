@@ -273,6 +273,10 @@ select {
   color: #00a8cc;
 }
 
+.posts__view-all:hover {
+  color: #ff6464;
+}
+
 .posts__items {
   margin: 0px -10px;
 }
@@ -454,6 +458,76 @@ select {
 
 .blog__text {
   font-size: 16px;
+}
+
+.details {
+  max-width: 700px;
+  padding: 0px 10px 20px 10px;
+  margin: 0 auto;
+}
+
+.details__title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 147.0588235294%;
+  color: #21243d;
+  margin-bottom: 30px;
+}
+
+.details__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.details__year {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  background: #ff7c7c;
+  border-radius: 16px;
+  color: white;
+  font-weight: 900;
+  font-size: 18px;
+  padding: 0px 10px;
+  margin-right: 20px;
+}
+
+.details__category {
+  font-size: 20px;
+  line-height: 145%;
+  color: #21243d;
+}
+
+.details__text {
+  font-size: 16px;
+  line-height: 143.75%;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.details__text p {
+  margin-bottom: 30px;
+}
+
+.details__text img {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.details__text h2 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 200%;
+  color: #21243d;
+}
+
+.details__text h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 250%;
+  color: #21243d;
 }
 
 body {
@@ -718,6 +792,31 @@ body._lock {
 
   .blog__info {
     font-size: 16px;
+  }
+
+  .details__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .details__category {
+    font-size: 18px;
+  }
+
+  .details__text p {
+    margin-bottom: 20px;
+  }
+
+  .details__text img {
+    margin-bottom: 20px;
+  }
+
+  .details__text h2 {
+    font-size: 26px;
+  }
+
+  .details__text h3 {
+    font-size: 20px;
   }
 
   .page {
