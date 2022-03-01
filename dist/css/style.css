@@ -336,6 +336,14 @@ select {
   color: #21243d;
 }
 
+.works {
+  margin-bottom: 30px;
+}
+
+.works__main-title {
+  margin-bottom: 40px;
+}
+
 .work__item {
   display: flex;
   align-items: flex-start;
@@ -366,6 +374,10 @@ select {
   line-height: 146.6666666667%;
   color: #21243d;
   margin-bottom: 15px;
+}
+
+.work__title:hover {
+  color: #ff6464;
 }
 
 .work__info {
@@ -662,6 +674,10 @@ body._lock {
     display: flex;
     justify-content: center;
     margin: 0px;
+  }
+
+  .works__main-title {
+    margin-bottom: 20px;
   }
 
   .work__item {
