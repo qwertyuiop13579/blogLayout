@@ -3,7 +3,9 @@
 @import "fonts";
 @import "ui.scss";
 @import "header";
+@import "footer.scss";
 @import "home.scss";
+@import "works.scss";
 
 body {
   font-family: $fontFamily;
@@ -32,5 +34,20 @@ body._lock {
   flex: 1 1 auto;
   @media (max-width: $md3) {
     padding: 35px 0px 0px 0px;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  // .social__item
+  &__item {
+    color: $dark;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }

@@ -1,0 +1,19 @@
+.footer {
+  text-align: center;
+  padding: 50px 0px;
+
+  // .footer__content
+  &__content {
+    display: flex;
+    row-gap: 25px;
+    flex-direction: column;
+  }
+
+  // .footer__social
+  //   &__social {
+  //   }
+
+  // .footer__copy
+  //   &__copy {
+  //   }
+}

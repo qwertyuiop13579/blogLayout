@@ -196,6 +196,17 @@ select {
   color: #ff6464;
 }
 
+.footer {
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.footer__content {
+  display: flex;
+  row-gap: 25px;
+  flex-direction: column;
+}
+
 .hello {
   padding: 38px 0px 70px 0px;
 }
@@ -310,6 +321,75 @@ select {
   color: #000;
 }
 
+.featured-works {
+  padding: 30px 0px 80px 0px;
+}
+
+.featured-works__title {
+  margin: 0px 0px 20px 0px;
+  font-size: 22px;
+  line-height: 60px;
+  color: #21243d;
+}
+
+.work__item {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.work__item:last-child {
+  margin-bottom: 0px;
+}
+
+.work__image {
+  flex: 0 0 246px;
+  border-radius: 6px;
+  min-height: 180px;
+  overflow: hidden;
+}
+
+.work__body {
+  flex: 1 1 auto;
+  margin: 0px;
+}
+
+.work__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 146.6666666667%;
+  color: #21243d;
+  margin-bottom: 15px;
+}
+
+.work__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.work__year {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  color: white;
+  font-weight: 900;
+  font-size: 18px;
+  background: #142850;
+  border-radius: 16px;
+  padding: 0px 10px;
+  margin-right: 25px;
+}
+
+.work__category {
+  font-size: 20px;
+  line-height: 145%;
+  color: #8695a4;
+}
+
 body {
   font-family: "Heebo";
   color: #000;
@@ -330,6 +410,21 @@ body._lock {
   flex: 1 1 auto;
 }
 
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.social__item {
+  color: #21243d;
+}
+
+.social__item:hover {
+  transform: scale(1.2);
+}
+
 @media (min-width: 768px) {
   .menu__list {
     display: flex;
@@ -341,6 +436,10 @@ body._lock {
 
   .posts__items {
     display: flex;
+  }
+
+  .work__body {
+    padding: 0px 0px 0px 18px;
   }
 }
 
@@ -494,6 +593,34 @@ body._lock {
   }
 
   .recent-post__info {
+    font-size: 16px;
+  }
+
+  .featured-works {
+    padding: 0px 0px 40px 0px;
+  }
+
+  .featured-works__title {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .work__item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work__image {
+    flex: 0 0 180px;
+    margin-bottom: 15px;
+  }
+
+  .work__title {
+    font-size: 24px;
+  }
+
+  .work__category {
     font-size: 16px;
   }
 
